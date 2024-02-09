@@ -120,4 +120,14 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
+  .text{
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-touch-callout: none;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  }
 }
