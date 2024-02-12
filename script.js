@@ -1,3 +1,4 @@
+/*for background particl*/
 /*--------------------
 Vars
 --------------------*/
@@ -124,8 +125,10 @@ class Particle {
 /*--------------------
 Setup
 --------------------*/
+let canvas;
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  canvas=createCanvas(windowWidth, windowHeight);
+  canvas.parent('Home');
   for (let i = 0; i < opt.particles; i++) {
     Particles.push(new Particle(Math.random() * width, Math.random() * height));
   }
@@ -137,6 +140,7 @@ function setup() {
 Draw
 --------------------*/
 function draw() {
+  if (document.getElementById('Home'))
   time++;
   background(0, 100 - opt.tail);
 
@@ -146,7 +150,7 @@ function draw() {
   }
 }
 
-
+/*for the centre text*/ 
 /*--------------------
 Resize
 --------------------*/
