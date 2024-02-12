@@ -6,12 +6,17 @@
   font-family: 'IBM Plex Sans', sans-serif;
 }
 body {
-  margin: 0;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
   background: black;
+  overflow-x: hidden;
 }
 /* home */
+#Home {
+  height: 100vh; /* Set the height of the About section to 100vh */
+  position: relative;
+  top: 100%; /* Position it below the viewport */
+  width: 100%;
+}
 .header {
   position: fixed;
   top: 0;
@@ -65,8 +70,8 @@ body {
   cursor: pointer;
   display: none;
 }
-.container{
-  position: fixed;
+.container{ 
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -82,6 +87,13 @@ body {
   -ms-user-select: none;
 }
 /*about*/
+.About {
+  height: 100vh; /* Adjust as needed */
+  width: 100%;
+  position: absolute;
+  background-color: gray;
+  color: black;
+}
 /*breakpoints*/
 @media (max-width: 1200px){
   .header{
